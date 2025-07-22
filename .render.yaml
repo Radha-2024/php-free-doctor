@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: freedoctor-laravel
+    env: docker
+    dockerfilePath: docker/php/Dockerfile
+    buildCommand: docker-compose build
+    startCommand: docker-compose up
