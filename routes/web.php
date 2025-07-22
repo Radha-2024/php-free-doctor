@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\Admin\Auth\LoginController as AdminLogin;
 use App\Http\Controllers\Doctor\Auth\LoginController as DoctorLogin;
 use App\Http\Controllers\Doctor\Auth\RegisterController as DoctorRegister;
@@ -88,3 +89,9 @@ Route::prefix('customer')->name('customer.')->middleware('auth:customer')->group
     Route::get('/dashboard', [CustomerDashboard::class, 'index'])->name('dashboard');
     Route::post('/logout', [CustomerDashboard::class, 'logout'])->name('logout');
 });
+=======
+
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> c9ef566beeef94a341361821ac3aec52ff445c2f

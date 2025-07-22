@@ -35,6 +35,7 @@ return [
     |
     */
 
+<<<<<<< HEAD
    'guards' => [
     'web' => [
         'driver' => 'session',
@@ -54,6 +55,14 @@ return [
     ],
 ],
 
+=======
+    'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+    ],
+>>>>>>> c9ef566beeef94a341361821ac3aec52ff445c2f
 
     /*
     |--------------------------------------------------------------------------
@@ -73,6 +82,7 @@ return [
     */
 
     'providers' => [
+<<<<<<< HEAD
     'users' => [
         'driver' => 'eloquent',
         'model' => App\Models\User::class,
@@ -91,6 +101,18 @@ return [
     ],
 ],
 
+=======
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL', App\Models\User::class),
+        ],
+
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
+    ],
+>>>>>>> c9ef566beeef94a341361821ac3aec52ff445c2f
 
     /*
     |--------------------------------------------------------------------------
